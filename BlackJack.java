@@ -3,8 +3,7 @@ package BlackJackText;
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class BlackJack
-{
+public class BlackJack {
 	private Player player;
         private Dealer dealer;
         private char choice = 'n';
@@ -12,14 +11,12 @@ public class BlackJack
         private int playerHandValue = 0;
         private boolean busted = false;
 
-	public BlackJack()
-	{
+	public BlackJack() {
             player = new Player();
             dealer = new Dealer();
 	}
 
-	public void playGame()
-	{
+	public void playGame() {
 		Scanner keyboard = new Scanner(System.in);
                 
                 dealer.shuffle();
@@ -117,14 +114,13 @@ public class BlackJack
                 } while (continuePlaying == 'Y' || continuePlaying == 'y');
 	}
 	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		BlackJack game = new BlackJack();
 		game.playGame();
                 gandalf();
 	}
         
-        public static void gandalf(){
+        public static void gandalf() {
                 out.println("Gandalf thanks you for playing Blackjack, Metropolis : Population 1/2. He is usually the dealer, but he was sick today.\n");
                 out.println("                        ,---.");
                 out.println("                       /    |");

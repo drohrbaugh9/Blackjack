@@ -2,41 +2,41 @@ package BlackJackText;
 
 import java.util.ArrayList;
 
-public class Player extends AbstractPlayer{
+public class Player extends AbstractPlayer {
     
-    public Player(){
+    public Player() {
         super();
     }
     
-    public Player(ArrayList<Card> h, int w){
+    public Player(ArrayList<Card> h, int w) {
         super(h, w);
     }
     
-    public void addCardToHand(Card c){
+    public void addCardToHand(Card c) {
         super.addCardToHand(c);
     }
     
-    public void resetHand(){
+    public void resetHand() {
         super.resetHand();
     }
     
-    public boolean hit(){
+    public boolean hit() {
         return false;
     }
     
-    public void setWinCount(int w){
+    public void setWinCount(int w) {
         super.setWinCount(w);
     }
     
-    public int getWinCount(){
+    public int getWinCount() {
         return super.getWinCount();
     }
     
-    public int getHandSize(){
+    public int getHandSize() {
         return super.getHandSize();
     }
     
-    public int getHandValue(){
+    public int getHandValue() {
         return super.getHandValue();
     }
 }

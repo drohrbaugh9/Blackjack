@@ -2,42 +2,37 @@ package BlackJackText;
 
 import java.util.ArrayList;
 
-public abstract class AbstractPlayer implements Playerable
-{
+public abstract class AbstractPlayer implements Playerable {
    private ArrayList<Card> hand = new ArrayList<Card>();
    private int winCount;
    private ArrayList<Integer> skip = new ArrayList<Integer>();
 
-   public AbstractPlayer(){
+   public AbstractPlayer() {
        winCount = 0;
    }
    
-   public AbstractPlayer(ArrayList<Card> h, int w){
+   public AbstractPlayer(ArrayList<Card> h, int w) {
        hand = h;
        winCount = w;
    }
 
-   public void addCardToHand(Card temp)
-   {
+   public void addCardToHand(Card temp) {
        hand.add(temp);
    }
 
-   public void resetHand()
-   {
+   public void resetHand() {
        hand = new ArrayList<Card>();
    }
 
-   public  void setWinCount( int numwins )
-   {
+   public  void setWinCount( int numwins ) {
        winCount = numwins;
    }
 
-   public int getWinCount() { return winCount; }
+   public int getWinCount() {return winCount;}
 
-   public int getHandSize() { return hand.size(); }
+   public int getHandSize() {return hand.size();}
 
-   public int getHandValue()
-   {
+   public int getHandValue() {
        int total = 0;
        for (int i = 0; i < hand.size(); i++){
            if (hand.get(i).getFace() == 1){
@@ -59,8 +54,7 @@ public abstract class AbstractPlayer implements Playerable
        return total;
    }
 
-   public String toString()
-   {
+   public String toString() {
       return "hand = " + hand.toString() + "\n Hand value - " + getHandValue() + " \n Wins - " + winCount;
    }
 }
