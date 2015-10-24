@@ -21,7 +21,7 @@ public class BlackJack {
                 
                 dealer.shuffle();
                 
-                out.println("Welcome to BlackJack, Metropolis : Population 1/2\n");
+                out.println("Welcome to BlackJack\n");
                 out.println("Your dealer:\tSUPERMAN\n");
                 out.println("             .=.,");
                 out.println("            ;c =\\");
@@ -121,7 +121,7 @@ public class BlackJack {
 	}
         
         public static void gandalf() {
-                out.println("Gandalf thanks you for playing Blackjack, Metropolis : Population 1/2. He is usually the dealer, but he was sick today.\n");
+                out.println("Gandalf thanks you for playing Blackjack. He is usually the dealer, but he was sick today.\n");
                 out.println("                        ,---.");
                 out.println("                       /    |");
                 out.println("                      /     |");
